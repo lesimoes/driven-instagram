@@ -246,16 +246,13 @@ strong {
         display: none;
     }
     
-    .topo-container {
-        width: 900px;
-        margin: 0 auto;
-    }
     .conteudo {
         justify-content: center;
     }
 
-
-
+    .topo-container, .conteudo, .storie {
+        width: 100%;
+    }
 }
 
 /* Mobile */
@@ -267,7 +264,7 @@ strong {
         align-items: center;
     }
     .topo-container, .conteudo, .timeline {
-        width: 100%;
+        justify-content: center;
     }
 
     .sidebar, .topo-container input, .botoes-topo, .botao-scroll, .topo-container {
@@ -288,4 +285,11 @@ strong {
         display: initial;
         width: 100%;
     }
+
+
+    .post-foto img, video {
+        width: 100%;
+        height: 100%;
+    }
+
 } 
