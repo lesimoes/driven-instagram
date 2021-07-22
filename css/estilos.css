@@ -12,6 +12,14 @@ strong {
     font-weight: bold;
 }
 
+.separador {
+    width: 1px;
+    height: 22px;
+    background-color: #DBDBDB;
+    margin: 0 10px;
+  }
+
+  
 .topo {
     background-color: #FFFFFF;
     height: 54px;
@@ -38,8 +46,7 @@ strong {
 }
 
 .logo-container ion-icon {
-    font-size: 20px;
-    margin: 0 20px 0px 0px;    
+    font-size: 20px; 
 }
 
 .logo {
@@ -81,18 +88,95 @@ strong {
     width: 293px;
     height: 300px;
     background: #FAFAFA;
-    background-color: green;
     position: fixed;
     top: 88px;
     right: calc((100% - 935px) / 2);
 }
 
 
-
+.sidebar > .usuario {
+    display: flex;
+    align-items: center;
+  }
+  
+  .sidebar > .usuario img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+  }
+  
+  .sidebar > .usuario .texto {
+    display: flex;
+    flex-direction: column;
+    margin-left: 14px;
+    font-weight: 300;
+    color: #8E8E8E;
+  }
+  
+  .sidebar > .usuario .texto strong {
+    font-weight: 500;
+    color: #262626;
+  }
+  
+  .sidebar .sugestoes .titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 14px;
+  }
+  
+  .sidebar .sugestoes .sugestao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    height: 31px;
+    margin-bottom: 16px;
+  }
+  
+  .sidebar .sugestoes .sugestao .usuario {
+    display: flex;
+  }
+  
+  .sidebar .sugestoes img {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .sidebar .sugestoes .seguir {
+    color: #139EF2;
+    font-weight: 600;
+  }
+  
+  .sidebar .sugestoes .sugestao .usuario .texto {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .sidebar .sugestoes .sugestao .usuario .texto :last-child {
+    color: #8E8E8E;
+    font-weight: 400;
+  }
+  
+  .links, .copyright {
+    font-size: 11px;
+    color: #C7C7C7;
+  } 
+  
+  .links {
+    margin-top: 40px;
+    cursor: pointer;
+  }
+  
+  .copyright {
+    margin-top: 18px;
+  }
 
 .post {
     height: 749px;
-    width: 100%;
+   
     background-color: #FFFFFF;
     border: 1px solid #DBDBDB;
     border-radius: 3px;
@@ -133,8 +217,8 @@ strong {
 }
 
 .post-foto img, video {
-    width: 610px;
-    height: 610px;
+    width: 100%;
+   
 }
 
 .post-footer {
@@ -150,9 +234,10 @@ strong {
     width: 100%;
 }
 .post-actions ion-icon {
-    margin: 2px 8px;
-    font-size: 18px;
+    margin: 4px 8px;
+    font-size: 22px;
 }
+
 
 .post-comments {
     height: 21px;
@@ -190,7 +275,7 @@ strong {
 .imagem-storie {
     width: 64px;
     height: 64px;
-    background-image: url('../imagens/stories_background.jpg');
+    background-image: url('../assets/img/stories_background.jpg');
     background-size: cover;
     margin-bottom: 5px;
     display: flex;
@@ -258,6 +343,10 @@ strong {
     .topo-container, .conteudo, .storie {
         width: 100%;
     }
+
+    .topo-container {
+        padding: 0 18px;
+    }
 }
 
 /* Mobile */
@@ -267,7 +356,14 @@ strong {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 0 18px;
     }
+
+    .topo-container-mobile ion-icon {
+        font-size: 20px;
+        margin: 0 5px;
+    }
+    
     .topo-container, .conteudo, .timeline {
         justify-content: center;
         width: 100%;
@@ -295,6 +391,7 @@ strong {
     .post, .post-foto, .post-footer {
         width: 100%;
     }
+
     .post-foto img, video {
         width: 100%;
         height: 100%;
