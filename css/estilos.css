@@ -77,30 +77,18 @@ strong {
     width: 614px;
 }
 
-.storie {
-    width: 64px;
-    height: 100%;
-    margin: 0 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 12px;
+.sidebar {
+    width: 293px;
+    height: 300px;
+    background: #FAFAFA;
+    background-color: green;
+    position: fixed;
+    top: 88px;
+    right: calc((100% - 935px) / 2);
 }
 
-.stories {
-    width: 100%;
-    height: 118px;
-    background: #FFF;
-    border: 1px solid #DBDBDB;
-    border-radius: 3px;
-    margin-bottom: 25px;
-    display: flex;
-    overflow: hidden;
 
-    padding: 0 8px;
-    position: relative;
-}
+
 
 .post {
     height: 749px;
@@ -174,6 +162,31 @@ strong {
     width: 20px;
 }
 
+.storie {
+    width: 64px;
+    height: 100%;
+    margin: 0 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.stories {
+    width: 100%;
+    height: 118px;
+    background: #FFF;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    margin-bottom: 25px;
+    display: flex;
+    overflow: hidden;
+
+    padding: 0 8px;
+    position: relative;
+}
+
 .imagem-storie {
     width: 64px;
     height: 64px;
@@ -205,15 +218,6 @@ strong {
     align-items: center;
 }
 
-.sidebar {
-    width: 293px;
-    height: 300px;
-    background: #FAFAFA;
-    background-color: green;
-    position: fixed;
-    top: 88px;
-    right: calc((100% - 935px) / 2);
-}
 
 .bottom-bar-mobile {
     background-color: #FFFFFF;
