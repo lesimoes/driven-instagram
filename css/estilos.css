@@ -190,6 +190,7 @@ strong {
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .post-topo ion-icon {
@@ -346,7 +347,7 @@ strong {
 .bottom-bar-mobile {
     background-color: #FFFFFF;
     display: none;
-    border: 1px solid #DBDBDB;
+    border-top: 1px solid #DBDBDB;
     position: fixed;
     left: 0;
     bottom: 0;
@@ -425,6 +426,13 @@ strong {
     .bottom-bar-mobile {
         display: initial;
         width: 100%;
+    }
+
+    .post{
+        border: 1px solid #DBDBDB;
+        border-left: unset;
+        border-right: unset;
+        border-radius: unset;
     }
 
     .post, .post-foto, .post-footer {
