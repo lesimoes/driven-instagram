@@ -175,7 +175,7 @@ strong {
   }
 
 .post {
-    height: 749px;
+    /* height: 749px; */
    
     background-color: #FFFFFF;
     border: 1px solid #DBDBDB;
@@ -213,7 +213,7 @@ strong {
 
 .post-foto {
     width: 612px;
-    height: 749px;
+    /* height: 749px; */
 }
 
 .post-foto img, video {
@@ -222,7 +222,7 @@ strong {
 }
 
 .post-footer {
-    height: 68px;
+    /* height: 68px; */
     width: 612px;
     display: flex;
     flex-direction: column;
@@ -238,13 +238,26 @@ strong {
     font-size: 22px;
 }
 
-
-.post-comments {
+.post-curtidas {
     height: 21px;
     margin: 0 8px
 }
-.post-comments img {
+.post-curtidas img {
     width: 20px;
+}
+
+.post-comments{
+    margin: 20px 12px;
+}
+
+.comment{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.comment:last-child{
+    margin-bottom: unset;
 }
 
 .storie {
