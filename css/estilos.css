@@ -175,7 +175,7 @@ strong {
   }
 
 .post {
-    height: 749px;
+    /* height: 749px; */
    
     background-color: #FFFFFF;
     border: 1px solid #DBDBDB;
@@ -190,6 +190,7 @@ strong {
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .post-topo ion-icon {
@@ -213,7 +214,7 @@ strong {
 
 .post-foto {
     width: 612px;
-    height: 749px;
+    /* height: 749px; */
 }
 
 .post-foto img, video {
@@ -222,7 +223,7 @@ strong {
 }
 
 .post-footer {
-    height: 68px;
+    /* height: 68px; */
     width: 612px;
     display: flex;
     flex-direction: column;
@@ -238,13 +239,52 @@ strong {
     font-size: 22px;
 }
 
-
-.post-comments {
+.post-curtidas {
     height: 21px;
     margin: 0 8px
 }
-.post-comments img {
+.post-curtidas img {
     width: 20px;
+}
+
+.post-comments{
+    margin: 20px 12px;
+}
+
+.comment{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.comment:last-child{
+    margin-bottom: unset;
+}
+
+.comment-field{
+    display: flex;
+    border-top: 1px solid #DBDBDB;
+}
+
+.comment-field input{
+    flex-grow: 1;
+    padding: 10px;
+    height: 50px;
+    border: unset;
+    outline: unset;
+}
+
+.publish-btn{
+    border: unset;
+    background-color: unset;
+    font-weight: bold;
+    padding: 0 20px;
+    color: #B2DFFC;
+    transition: color 300ms ease-in-out;
+}
+
+.publish-btn:hover{
+    color: #0095F6 ;
 }
 
 .storie {
@@ -307,7 +347,7 @@ strong {
 .bottom-bar-mobile {
     background-color: #FFFFFF;
     display: none;
-    border: 1px solid #DBDBDB;
+    border-top: 1px solid #DBDBDB;
     position: fixed;
     left: 0;
     bottom: 0;
@@ -386,6 +426,13 @@ strong {
     .bottom-bar-mobile {
         display: initial;
         width: 100%;
+    }
+
+    .post{
+        border: 1px solid #DBDBDB;
+        border-left: unset;
+        border-right: unset;
+        border-radius: unset;
     }
 
     .post, .post-foto, .post-footer {
